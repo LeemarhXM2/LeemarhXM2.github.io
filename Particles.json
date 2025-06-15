@@ -1,0 +1,38 @@
+{
+  "particles": {
+    "number": {
+      "value": 65
+    },
+    "color": {
+      "value": "#daa520"
+    },
+    "shape": {
+      "type": "circle"
+    },
+    "opacity": {
+      "value": 0.6
+    },
+    "size": {
+      "value": 3
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#daa520",
+      "opacity": 0.5,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 2
+    }
+  },
+  "interactivity": {
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      }
+    }
+  }
+}
