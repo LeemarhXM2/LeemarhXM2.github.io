@@ -8,7 +8,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
-  <div class="sidebar">
+  <div class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('hidden')">☰</div>
+
+  <div class="sidebar hidden">
+    <span class="close-sidebar" onclick="document.querySelector('.sidebar').classList.add('hidden')">✖️</span>
     <h2>Menu</h2>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -18,13 +21,16 @@
     </ul>
   </div>
 
-  <div class="main-content">
-    <section class="fade-in">
-      <h2>About Me</h2>
-      <p>Hello! I’m Adewole Salimot, the creative mind behind <strong>IdeaPlus Graphix</strong>. With over 4 years of experience in the graphic design industry, I specialize in flyer design, image tracing, and document layout. My passion for digital art began with curiosity and turned into a career driven by precision, innovation, and 100% client satisfaction.</p>
-
-      <p>Throughout my design journey, I’ve mastered tools like CorelDRAW, Photoshop, and Microsoft Word, and I’m always exploring new styles to make my designs stand out. IdeaPlus Graphix is not just a brand — it’s a promise of excellence and creativity in every design delivered.</p>
-    </section>
+  <div class="main-content fade-in">
+    <h2>About Me</h2>
+    <p>Hi, I’m <strong>Adewole Salimot</strong> — the creative force behind <strong>IdeaPlus Graphix</strong>.</p>
+    <p>With over 4 years of hands-on experience, I specialize in:</p>
+    <ul>
+      <li>🎨 Flyer Design</li>
+      <li>🖼️ Image Tracing</li>
+      <li>📝 Document Formatting</li>
+    </ul>
+    <p>At IdeaPlus, we design with precision, deliver with creativity, and guarantee 100% satisfaction.</p>
   </div>
 </body>
 </html>
