@@ -2,10 +2,14 @@
   "particles": {
     "number": {
       "value": 65
-    },
     "color": {
-      "value": "#daa520"
-    },
+  "value": "#ffffff"
+},
+"line_linked": {
+  "color": "#ffffff",
+  "opacity": 0.8,
+  "width": 1.5
+},
     "shape": {
       "type": "circle"
     },
