@@ -1,69 +1,64 @@
+/* GLOBAL STYLES */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
   color: #333;
 }
 
+/* HEADER */
 header {
-  background: #222;
-  color: white;
+  background: #ffffff;
+  color: #222;
   padding: 20px;
   text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
+/* NAVIGATION */
 nav {
   margin-top: 10px;
 }
 
 nav a {
-  color: white;
+  color: #333;
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #ff6b6b;
 }
 
+/* MAIN SECTION */
 main {
-  padding: 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 
-.project img {
-  width: 300px;
-  height: auto;
-  border-radius: 8px;
-  margin: 10px 0;
+main h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 30px;
+main p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #555;
 }
 
-.button {
-  background: #007BFF;
-  color: white;/* Google Font */
-body {
-  font-family: 'Poppins', sans-serif;
-}
-
-/* Responsive Image Styling */
+/* PROJECT IMAGE STYLING */
 .project img {
   width: 100%;
   max-width: 500px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
 }
 
-/* Fade-in Animation */
+/* FADE-IN ANIMATION */
 .fade-in {
   opacity: 0;
   animation: fadeIn 1.2s ease-in forwards;
@@ -75,29 +70,30 @@ body {
   }
 }
 
-/* Button Style */
+/* FOOTER */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* BUTTONS */
+.button,
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #ff6b6b;
-  color: #fff;
+  background: #007BFF;
+  color: white;
   text-decoration: none;
   border-radius: 8px;
-  margin: 10px;
-  transition: background 0.3s;
-}
-
-.btn:hover {
-  background-color: #ff3b3b;
-  }
-  padding: 10px 20px;
-  border: none;
-  text-decoration: none;
-  border-radius: 5px;
   margin-top: 15px;
-  display: inline-block;
+  transition: background 0.3s;
+  font-weight: 500;
 }
 
-.button:hover {
+.button:hover,
+.btn:hover {
   background: #0056b3;
 }
