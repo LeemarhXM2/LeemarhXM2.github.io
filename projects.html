@@ -8,7 +8,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
-  <div class="sidebar">
+  <div class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('hidden')">☰</div>
+
+  <div class="sidebar hidden">
+    <span class="close-sidebar" onclick="document.querySelector('.sidebar').classList.add('hidden')">✖️</span>
     <h2>Menu</h2>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -18,20 +21,16 @@
     </ul>
   </div>
 
-  <div class="main-content">
-    <section class="fade-in">
-      <h2>My Projects</h2>
-      <div class="project">
-        <h3>Flyer Design Sample</h3>
-        <img src="images/flyer.jpg" alt="Flyer Design Sample">
-        <p>A vibrant flyer created for a promotional event, combining modern typography with visual appeal.</p>
-      </div>
-      <div class="project">
-        <h3>MartMelv Bread Logo</h3>
-        <img src="images/martmelv-logo.jpg" alt="MartMelv Bread Logo">
-        <p>Designed to convey freshness and trust, this logo was created for a bread production company using CorelDRAW.</p>
-      </div>
-    </section>
+  <div class="main-content fade-in">
+    <h2>My Projects</h2>
+    <div class="project">
+      <h3>Flyer Design Sample</h3>
+      <img src="images/flyer.jpg" alt="Flyer Design Sample">
+    </div>
+    <div class="project">
+      <h3>MartMelv Bread Logo</h3>
+      <img src="images/martmelv-logo.jpg" alt="MartMelv Bread Logo">
+    </div>
   </div>
 </body>
 </html>
