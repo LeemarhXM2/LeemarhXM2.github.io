@@ -1,51 +1,35 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | IdeaPlus Graphix</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: linear-gradient(120deg, rgba(255,255,255,0.05), rgba(0,0,0,0.2)), url('https://www.transparenttextures.com/patterns/graphy.png');
-      animation: moveBG 30s linear infinite;
-      z-index: -1;
-    }@keyframes moveBG {
-  0% { background-position: 0 0; }
-  100% { background-position: 1000px 1000px; }
-}
-
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | IdeaPlus Graphix</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
-  <div class="sidebar">
+  <div class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('hidden')">☰</div>
+
+  <div class="sidebar hidden">
+    <span class="close-sidebar" onclick="document.querySelector('.sidebar').classList.add('hidden')">✖️</span>
     <h2>Menu</h2>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html" class="active">Work</a></li>
+      <li><a href="projects.html">Work</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
-  </div>  <div class="main-content">
-    <section class="fade-in">
-      <h2>My Projects</h2>
-      <div class="project">
-        <h3>Flyer Design Sample</h3>
-        <img src="images/flyer.jpg" alt="Flyer Design Sample">
-        <p>A vibrant flyer created for a promotional event, combining modern typography with visual appeal.</p>
-      </div>
-      <div class="project">
-        <h3>MartMelv Bread Logo</h3>
-        <img src="images/martmelv-logo.jpg" alt="MartMelv Bread Logo">
-        <p>Designed to convey freshness and trust, this logo was created for a bread production company using CorelDRAW.</p>
-      </div>
-    </section>
+  </div>
+
+  <div class="main-content fade-in">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+    <p style="margin-top: 20px; color: goldenrod;"><strong>Email:</strong> adesalimot200@gmail.com <br><strong>Phone:</strong> 09018112826</p>
   </div>
 </body>
 </html>
